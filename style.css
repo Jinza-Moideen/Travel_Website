@@ -5,7 +5,8 @@
     font-family: 'poppins', sans-serif;
 }
 .top-section{
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("images/banner.png");
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url("images/banner.png");
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -19,6 +20,10 @@
 }
 nav{
     padding: 15px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 30;
 }
 nav img{
     width: 120px;
@@ -45,11 +50,16 @@ nav ul li a{
     transform: translate(-50%);
     background-color: #fff;
 }
-nav button{
+nav .menu-icon{
+    display: none;
+}
+nav .register-btn{
     background-color: #fff;
     border: none;
     border-radius: 20px;
     padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
 }
 .middle{
     position: absolute;
@@ -80,6 +90,14 @@ nav button{
 .form-section input::placeholder{
     font-size: 12px;
 }
+.form-section form div{
+    width: 20%;
+    margin-right: 2%;
+    border-right: 1px grey solid;
+}
+.form-section form div:last-of-type{
+    border-right: none;
+}
 .form-section button{
     border-radius: 50%;
     background-color: #ff5361;
@@ -89,4 +107,271 @@ nav button{
 }
 .form-section button img{
     width: 15px;
+}
+
+/* ------ bottom section ------ */
+
+.bottom-section{
+    padding: 2% 5%;
+}
+h2{
+    margin-bottom: 22px;
+    margin-top: 10px;
+    font-weight: 300;
+}
+.exclusives{
+    margin-top: 10px;
+}
+.exclusive-images{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px 20px;
+}
+.exclusive-images .ex-img{
+    min-width: 200px;
+    border-radius: 10px;
+}
+.exclusive-images img{
+    width: 100%;
+}
+.exclusive-images div{
+    position: relative;
+}
+.exclusive-images div span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+.trending-places{
+    margin-top: 40px;
+}
+.trending-images{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.trending-images div img{
+    width: 95%;
+    border-radius: 10px;
+}
+.trending-images div p{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.sharing{
+    margin-top: 60px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.3), transparent), url(images/banner-2.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 95px 60px;
+    border-radius: 10px;
+    color: #fff;
+}
+.sharing-text h1{
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.sharing-text p{
+    font-size: 14px;
+    padding: 15px 0px;
+}
+.sharing-btn{
+    background-color: #ff5361;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+}
+.travel-stories{
+    margin-top: 40px;
+}
+.travel-images{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.travel-images div{
+    position: relative;
+    width: 31%;
+    border-radius: 50%;
+}
+.travel-images div img{
+    width: 100%;
+    border-radius: 60%;
+}
+.travel-images div:hover img{
+    opacity: 0.9;
+}
+.travel-images div span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+.travellers-btn{
+    margin: 60px 0px 50px 42%;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ff5361;
+    color: #fff;
+    font-size: 15px;
+}
+.about{
+    text-align: center;
+    padding: 10px 70px;
+    margin-bottom: 40px;
+    color: #333;
+}
+.about p{
+    font-size: 15px;
+}
+
+/*------ footer ------ */
+footer{
+    text-align: center;
+}
+footer a{
+    color: #444;
+    margin-right: 20px;
+}
+footer hr{
+    margin: 20px auto;
+    width: 80%;
+}
+footer p{
+    font-size: 14px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/*------ mobile view ------*/
+@media only screen and (max-width: 600px){
+    nav{
+        background-color: black;
+        padding: 15px 30px;
+        border-radius: 5px;
+        display: inline-block;
+        position: fixed;
+        z-index: 20;
+        text-align: right;
+        width: 100%;
+        max-height: 60px;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav .logo img{
+        position: fixed;
+        top: 20px;
+        left: 25px;
+        width: 90px;
+    }
+    .top-section nav ul{
+        display: block;
+        padding: 40px 60px 15px 0px;
+    }
+    nav ul li{
+        padding-top: 5px;
+    }
+    nav ul li a{
+        font-size: 12px;
+    }
+    nav .menu-icon{
+        position: fixed;
+        top: 25px;
+        right: 25px;
+        display: inline;
+        color: #fff;
+        cursor: pointer;
+    }
+    nav a{
+        text-decoration: none;
+    }
+    nav .register-btn{
+        display: block;
+        width: 100px;
+        padding: 6px 14px;
+        font-size: 11px;
+        margin-left: 227px;
+    }
+    .top-section .active::before{
+        display: none;
+    }
+    .middle{
+        position: absolute;
+        top: 53%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 65%;
+    }
+    .middle h1{
+        font-size: 25px;
+        font-weight: 300;
+    }
+    .form-section{
+        border-radius: 5px;
+        background-color: #fff;
+        margin-top: 20px;
+    }
+    .form-section form{
+        display: block;
+        margin-top: 10px;
+    }
+    .form-section form div{
+        width: 90%;
+        margin-right: 2%;
+        border-bottom: 1px grey solid;
+        border-right: none;
+        margin-bottom: 20px;
+    }
+    .form-section button{
+        display: block;
+        margin: 0px auto 10px;
+    }
+    .trending-images div p{
+        font-size: 12px;
+        margin-top: 8px;
+    }
+    .sharing-text p{
+        font-size: 12px;
+    }
+    .sharing-text p br{
+        display: none;
+    }
+    .travel-images div span{
+        font-size: 11px;
+    }
+    .travellers-btn{
+        margin: 60px 0px 50px 25%;
+        padding: 12px 35px;
+        border: none;
+        border-radius: 20px;
+        background-color: #ff5361;
+        color: #fff;
+        font-size: 12px;
+    }
+    .about p{
+        font-size: 12px;
+    }
+    footer a{
+        color: #444;
+        font-size: 12px;
+        margin-right: 20px;
+    }
+    footer p{
+        font-size: 12px;
+    }
+    .hidemenu{
+        max-height: 200px;
+    }
 }

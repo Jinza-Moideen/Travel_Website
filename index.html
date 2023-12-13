@@ -3,19 +3,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Staybnb</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <div class="container">
 
         <div class="top-section">
-            <nav class="flex">
-                <a href=""><img src="images/logo.png"></a>
+            <nav id="navbar">
+                <a href="" class="logo"><img src="images/logo.png"></a>
                 <ul class="flex">
                     <li><a href="" class="active">Popular Places</a></li>
                     <li><a href="">Travel Outside</a></li>
                     <li><a href="">Online Packages</a></li>
                 </ul>
-                <button>Register Now</button>
+                <a href=""><button class="register-btn">Register Now</button></a>
+                <i class="fa-solid fa-bars menu-icon" onclick="toggleMenu()"></i>
             </nav>
             <div class="middle">
                 <h1>Find Your Next Stay</h1>
@@ -42,7 +44,126 @@
                 </div>
             </div>
         </div>
+        <div class="bottom-section">
+            <div class="exclusives">
+                <h2>Exclusives</h2>
+                <div class="exclusive-images">
+                    <div>
+                        <img src="images/image-1.png" class="ex-img">
+                        <span>London</span>
+                    </div>
+                    <div>
+                        <img src="images/image-2.png" class="ex-img">
+                        <span>Switzerland</span>
+                    </div>
+                    <div>
+                        <img src="images/image-3.png" class="ex-img">
+                        <span>Australia</span>
+                    </div>
+                    <div>
+                        <img src="images/image-4.png" class="ex-img">
+                        <span>France</span>
+                    </div>
+                    <div>
+                        <img src="images/image-5.png" class="ex-img">
+                        <span>Amsterdam</span>
+                    </div>
+                    <div>
+                        <img src="images/image-6.png" class="ex-img">
+                        <span>Netherlands</span>
+                    </div>
+                    <div>
+                        <img src="images/image-7.png" class="ex-img">
+                        <span>New York</span>
+                    </div>
+                    <div>
+                        <img src="images/image-8.png" class="ex-img">
+                        <span>Chicago</span>
+                    </div>
+                    <div>
+                        <img src="images/image-9.png" class="ex-img">
+                        <span>San Francisco</span>
+                    </div>
+                    <div>
+                        <img src="images/image-10.png" class="ex-img">
+                        <span>Shanghai</span>
+                    </div>
+                </div>
+            </div>
+            <div class="trending-places">
+                <h2>Trending Places</h2>
+                <div class="trending-images">
+                    <div>
+                        <img src="images/dubai.png">
+                        <p>Dubai</p>
+                    </div>
+                    <div>
+                        <img src="images/new-york.png">
+                        <p>New York</p>
+                    </div>
+                    <div>
+                        <img src="images/paris.png">
+                        <p>Paris</p>
+                    </div>
+                    <div>
+                        <img src="images/new-delhi.png">
+                        <p>New Delhi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sharing">
+                <div class="sharing-text">
+                    <h1>Sharing<br>Is Earning Now</h1>
+                    <p>Great opportunity to make money by<br>sharing your extra space</p>
+                    <button class="sharing-btn">Know More</button>
+                </div>
+            </div>
+            <div class="travel-stories">
+                <h2>Travellers Stories</h2>
+                <div class="travel-images">
+                    <div>
+                        <img src="images/story-1.png">
+                        <span>Popular European countries with a budget of just $10,000</span>
+                    </div>
+                    <div>
+                        <img src="images/story-2.png">
+                        <span>Travelled more than 100 countries in less than a year</span>
+                    </div>
+                    <div>
+                        <img src="images/story-3.png">
+                        <span>Best experience you get while travelling to Thailand</span>
+                    </div>
+                </div>
+                <button class="travellers-btn">Start making money</button>
+            </div>
+            <div class="about">
+                <h2>About Staybnb</h2>
+                <p>We offer the benefit of easy online booking for clients. Instead of enduring long 
+                   phone calls and paperwork, clients can conveniently book services directly on the website. 
+                   This streamlined process saves time for both customers and staff, as bookings can be made 
+                   24/7. A travel website is a website that provides travel reviews, trip fares, or a 
+                   combination of both. Over 1.5 billion people book travel per year, 70% of which is done 
+                   online.
+                </p>
+            </div>
+        </div>
+        <footer>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <hr>
+            <p>Copyright &copy 2023</p>
+        </footer>
         
     </div>
+
+    <script>
+        var navbar = document.getElementById("navbar");
+        function toggleMenu(){
+            navbar.classList.toggle("hidemenu");
+        }
+    </script>
 </body>
 </html>
