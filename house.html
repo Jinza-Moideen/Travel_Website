@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staybnb</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+
+            <nav id="navbar" class="navbar-white">
+                <a href="index.html" class="logo"><img src="images/logo-red.png"></a>
+                <ul class="flex">
+                    <li><a href="index.html">Popular Places</a></li>
+                    <li><a href="listing.html">Online Packages</a></li>
+                    <li><a href="">Travel Outside</a></li>
+                </ul>
+                <a href=""><button class="register-btn">Register Now</button></a>
+                <i class="fa-solid fa-bars menu-icon" onclick="toggleMenu()"></i>
+            </nav>  
+            <div class="details">
+
+                <div class="house-details">
+                    <h2>Wenge House</h2>
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <p>245 Reviews</p>
+                        <p>San Francisco, California, United States</p>
+                    </span>
+                    <div class="house-images">
+                        <div class="large-image">
+                            <img src="images/house-1.png">
+                        </div>
+                        <div class="small-image">
+                            <img src="images/house-3.png">
+                            <img src="images/house-5.png">
+                            <img src="images/house-2.png">
+                            <img src="images/house-4.png">
+                        </div>
+                    </div>
+                    <div class="housedetails-bottom">
+                        <h3>Entire rental unit hosted by Brandon</h3>
+                        <span><p>2 Guests</p><p>2 Beds</p><p>1 Bathroom</p></span>
+                        <p class="bold">$100 / day</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="house-search">
+                        <div>
+                            <label>Check In</label>
+                            <input type="text" placeholder="Add Dates">
+                        </div>
+                        <div>
+                            <label>Check Out</label>
+                            <input type="text" placeholder="Add Dates">
+                        </div>
+                        <div>
+                            <label>Guests</label>
+                            <input type="text" placeholder="Add Guests">
+                        </div>
+                        <button type="submit" class="check-btn">Check Availability</button>
+                </div>
+                <div class="house-facilities">
+                    <div class="facilities">
+                        <div>
+                            <span><i class="fa-solid fa-house"></i><p>Entire Home</p></span>
+                            <p>You will have the entire flat for you</p>
+                        </div>
+                        <div>
+                            <span><i class="fa-solid fa-paintbrush"></i><p>Enhanced Clean</p></span>
+                            <p>This host has committed to Staybnb's cleaning process</p>
+                        </div>
+                        <div>
+                            <span><i class="fa-solid fa-location-dot"></i><p>Great Location</p></span>
+                            <p>90% of recent guests gave the location a 5-star rating</p>
+                        </div>
+                        <div>
+                            <span><i class="fa-solid fa-heart"></i><p>Great Check-in experience</p></span>
+                            <p>100% of recent guests gave the check-in process a 5-star rating</p>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p>Immerse yourself in nature and pure luxury at Shangrila Rénao situated on top of 
+                           Tandi hill near Jibhi. Not only can you pour yourself in a hot bubble bath but also 
+                           enjoy the stunning views right from your bathtub. Away from the road or any traffic 
+                           noise all you hear are birds chirping and you might as well catch a sight of flying 
+                           squirrel or a shooting star at night from your all glass cabin.
+                        </p>
+                        <a href="">Show more</a>
+                    </div>
+                </div>
+                <div class="map">
+                    <h2>Location on map</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100939.
+                    99640994321!2d-122.52000183427205!3d37.
+                    757807038211425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+                    1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!
+                    5e0!3m2!1sen!2sin!4v1702675026905!5m2!1sen!2sin" width="600" height="450" style="border:0;" 
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p>San Francisco, California, United States</p>
+                    <hr>
+                </div>
+                <div class="host">
+                    <div class="host-info">
+                        <div class="host-image">
+                            <img src="images/host.png">
+                        </div>
+                        <div>
+                            <h3>Hosted by Brandon</h3>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <p>245 Reviews | Response rate:100%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit">Contact Host</button>
+                </div>
+
+            </div>
+
+        <footer>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <hr>
+            <p>Copyright &copy 2023</p>
+        </footer>
+        
+    </div>
+
+    <script>
+        var navbar = document.getElementById("navbar");
+        function toggleMenu(){
+            navbar.classList.toggle("hidemenu");
+        }
+    </script>
+</body>
+</html>

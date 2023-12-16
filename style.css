@@ -34,7 +34,7 @@ nav ul{
 }
 nav ul li a{
     text-decoration: none;
-    font-size: 16px;
+    font-size: 15px;
     color: #fff;
 }
 .active{
@@ -60,6 +60,9 @@ nav .register-btn{
     padding: 10px 20px;
     text-decoration: none;
     cursor: pointer;
+}
+.register-btn:hover{
+    box-shadow: 0px 2px 5px #979797;
 }
 .middle{
     position: absolute;
@@ -136,6 +139,11 @@ nav .register-btn{
 }
 .exclusive-images div{
     position: relative;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.exclusive-images div:hover{
+    transform: translateY(-5%);
 }
 .exclusive-images div span{
     position: absolute;
@@ -151,10 +159,18 @@ nav .register-btn{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 2%;
+}
+.trending-images div{
+    width: 95%;
 }
 .trending-images div img{
-    width: 95%;
+    width: 100%;
     border-radius: 10px;
+    cursor: pointer;
+}
+.trending-images div img:hover{
+    box-shadow: 0px 0px 8px #979797;
 }
 .trending-images div p{
     font-size: 15px;
@@ -186,6 +202,12 @@ nav .register-btn{
     margin-top: 10px;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
+}
+.sharing-btn:hover{
+    background: transparent;
+    padding: 9px 19px;
+    border: 1px solid #ff5361;
 }
 .travel-stories{
     margin-top: 40px;
@@ -225,6 +247,10 @@ nav .register-btn{
     background-color: #ff5361;
     color: #fff;
     font-size: 15px;
+    cursor: pointer;
+}
+.travellers-btn:hover{
+    box-shadow: 0px 3px 5px #979797;
 }
 .about{
     text-align: center;
@@ -380,7 +406,6 @@ footer p{
     color: #000;
 }
  .navbar-white .register-btn{
-    border: 1px solid;
     background-color: #ff5361;
     color: #fff;
 }
@@ -401,6 +426,10 @@ footer p{
     font-size: 27px;
     margin-top: 10px;
 }
+.left a{
+    text-decoration: none;
+    color: #000;
+}
 .house{
     display: flex;
     margin-top: 30px;
@@ -413,6 +442,10 @@ footer p{
 .house-img img{
     width: 100%;
     border-radius: 12px;
+    transition: 0.5s;
+}
+.house-img img:hover{
+    transform: translateY(-5%);
 }
 .house-info{
     flex-basis: 58%;
@@ -427,7 +460,7 @@ footer p{
     color: #474747;
 }
 .house-info i{
-    color: rgb(248, 75, 75);
+    color: #ff5361;
     font-size: 14px;
     margin-top: 10px;
 }
@@ -491,12 +524,14 @@ footer p{
 .pagination img{
     width: 10px;
     margin: 0px 10px;
+    cursor: pointer;
 }
 .pagination span{
     font-size: 15px;
     border-radius: 50%;
     margin: 0px 4px;
     padding: 3px 6px;
+    cursor: pointer;
 }
 .page-active{
     background-color: #333;
@@ -546,5 +581,301 @@ footer p{
     }
     .pagination span{
         font-size: 12px;
+    }
+}
+
+/*------ house details page ------*/
+.details{
+    padding: 3% 10%;
+}
+.house-details span{
+    display: flex;
+    padding: 15px 0px;
+}
+.house-details span i{
+    font-size: 13px;
+    color: #ff5361;
+}
+.house-details span p{
+    font-size: 14px;
+    margin-left: 20px;
+}
+.house-images{
+    display: flex;
+    gap: 1%;
+}
+.large-image{
+    flex-basis: 50%;
+}
+.large-image img{
+    width: 100%;
+    border-radius: 10px;
+}
+.small-image{
+    flex-basis: 50%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 2%;
+}
+.small-image img{
+    width: 100%;
+    border-radius: 10px;
+}
+.housedetails-bottom{
+    margin-top: 10px;
+}
+.housedetails-bottom span{
+    display: flex;
+    padding-left: 0px;
+    padding-top: 8px;
+}
+.housedetails-bottom span p:first-of-type{
+    margin-left: 0px;
+}
+.bold{
+    font-weight: bold;
+    text-align: right;
+}
+.details hr{
+    width: 65%;
+    margin: 20px auto 40px auto;
+}
+.house-search{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 0 15px #979797;
+    width: 90%;
+}
+.house-search div{
+    margin: 10px 10px;
+}
+.house-search div label{
+    font-size: 14px;
+}
+.house-search div input{
+    display: block;
+    border: none;
+    outline: none;
+    padding: 5px 0px;
+}
+.house-search .check-btn{
+    width: 25%;
+    height: 10%;
+    margin-top: 7px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #ff5361;
+    cursor: pointer;
+}
+.facilities{
+    width: 65%;
+    padding: 10px 0px 20px 0px;
+    border-bottom: 2px solid #c9c9c9;
+}
+.facilities div{
+    margin: 10px 0px;
+    color: #444;
+}
+.facilities div span{
+    display: flex;
+    align-items: center;
+    gap: 3%;
+}
+.facilities div span i{
+    font-size: 14px;
+}
+.facilities div span p{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 0px;
+    margin: 0px;
+}
+.facilities div p{
+    font-size: 14px;
+    margin-left: 5%;
+}
+.description{
+    width: 65%;
+    padding: 40px 0px;
+    border-bottom: 2px solid #c9c9c9;
+}
+.description p{
+    width: 80%;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.description a{
+    color: #333;
+    font-weight: bold;
+}
+.map{
+    padding: 30px 0px 10px 0px;
+}
+.map iframe{
+    width: 100%;
+    border-radius: 5px;
+    margin: 20px 0px;
+}
+.map p{
+    font-size: 15px;
+    font-weight: bold;
+}
+.map hr{
+    width: 65%;
+    margin-left: 0px;
+}
+.host{
+    margin-bottom: 30px;
+}
+.host-info{
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+.host-image{
+    width: 80px;
+}
+.host-image img{
+    width: 100%;
+    border-radius: 50%;
+}
+.rating{
+    display: flex;
+    padding-top: 10px;
+}
+.rating i{
+
+   color: #ff5361;
+   font-size: 14px;
+   padding: 0px 2px;
+}
+.rating p{
+    margin-left: 10px;
+    font-size: 14px;
+}
+.host button{
+    margin-left: 7%;
+    background: transparent;
+    padding: 12px 28px;
+    margin-top: 20px;
+    border: 1px solid #b84751;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.host button:hover{
+    background: #ff5361;
+    padding: 13px 29px;
+    color: #fff;
+    border: none;
+}
+
+/*------ house page mobile view ------*/
+@media only screen and (max-width:600px){
+    .details{
+        padding-top: 90px;
+    }
+    .house-details span{
+        display: block;
+        padding-top: 5px;
+    }
+    .house-details span i{
+        font-size: 12px;
+    }
+    .house-details span p{
+        font-size: 12px;
+        padding-top: 2px;
+        margin-left: 0px;
+    }
+    .house-images{
+        display: block;
+    }
+    .small-image{
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-gap: 3%;
+    }
+    .housedetails-bottom h3{
+        font-size: 18px;
+        margin-top: 15px;
+    }
+    .housedetails-bottom span{
+        display: flex;
+    }
+    .housedetails-bottom span p{
+        margin-left: 10px;
+    }
+    .bold{
+        font-size: 13px;
+        text-align: left;
+    }
+    .house-search{
+        display: block;
+    }
+    .house-search div{
+        padding: 8px 0px;
+    }
+    .house-search div label{
+        font-size: 13px;
+    }
+    .house-search div input{
+        width: 100%;
+        border-bottom: 1px solid #979797;
+    }
+    .house-search div input::placeholder{
+        font-size: 12px;
+    }
+    .house-search .check-btn{
+        width: 100%;
+        padding: 10px 15px;
+        margin: 5px 0px 10px 0px;
+        cursor: pointer;
+    }
+    .facilities{
+        width: 100%;
+    }
+    .facilities div span i{
+        font-size: 12px;
+    }
+    .facilities div span p{
+        font-size: 14px;
+    }
+    .facilities div p{
+        margin-left: 7%;
+        font-size: 12px;
+    }
+    .description{
+        width: 100%;
+        text-align: center;
+    }
+    .description p{
+        width: 100%;
+        font-size: 12px;
+    }
+    .description a{
+        font-size: 14px;
+    }
+    .map h2{
+        font-size: 18px;
+    }
+    .map p{
+        font-size: 12px;
+    }
+    .host-info{
+        display: block;
+    }
+    .host-info div h3{
+        font-size: 15px;
+    }
+    .rating i, .rating p{
+        font-size: 12px;
+    }
+    .host button{
+        padding: 10px 25px;
     }
 }
